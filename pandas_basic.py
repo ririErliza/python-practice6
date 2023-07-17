@@ -94,3 +94,51 @@ print(mydata)
 # 0       420        50
 # 1       380        40
 # 2       390        45
+
+
+''' Locate Row '''
+
+print(mydata.loc[0]) #Return row 0
+# calories    420
+# duration     50
+# returns a Pandas Series
+
+print(mydata.loc[[0]]) #Return row 0
+#    calories  duration
+# 0       420        50
+# using [], the result is a DataFrame
+
+print(mydata.loc[[0,1]]) #return row 0 and 1
+#    calories  duration
+# 0       420        50
+# 1       380        40
+
+
+''' Named Indexes '''
+df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+print(df)
+
+#       calories  duration
+# day1       420        50
+# day2       380        40
+# day3       390        45
+
+
+''' Load Files Into a DataFrame '''
+
+df = pd.read_csv('data.csv')
+#print(df)
+#      Duration  Pulse  Maxpulse  Calories
+# 0          60    110       130     409.1
+# 1          60    117       145     479.0
+# 2          60    103       135     340.0
+# 3          45    109       175     282.4
+# 4          45    117       148     406.0
+# ..        ...    ...       ...       ...
+
+'''--------------------------------------------------------------'''
+'''-------------------   Read CSV Files     ---------------------'''
+'''--------------------------------------------------------------'''
+
+data = pd.read_csv('data.csv')
+print(data.to_string())
