@@ -142,3 +142,20 @@ df = pd.read_csv('data.csv')
 
 data = pd.read_csv('data.csv')
 print(data.to_string())
+# to_string() : print the entire DataFrame.
+
+#If you have a large DataFrame with many rows,
+#  Pandas will only return the first 5 rows,
+#  and the last 5 rows
+
+''' max_rows '''
+print(pd.options.display.max_rows)
+# 60
+# In this system the number is 60, which means that if the DataFrame
+#  contains more than 60 rows, the print(df) statement will return
+#  only the headers and the first and last 5 rows.
+
+pd.options.display.max_rows = 9999
+df = pd.read_csv('data.csv')
+
+print(df) 
