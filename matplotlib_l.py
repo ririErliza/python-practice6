@@ -44,8 +44,8 @@ ypoints = np.array([3,8,1,10,5,7])
 
 vAxis = np.array([3,8,1,10])
 
-plt.plot(vAxis, marker='o', ms=20, mec= 'hotpink', mfc='hotpink')
-plt.show()
+# plt.plot(vAxis, marker='o', ms=20, mec= 'hotpink', mfc='hotpink')
+# plt.show()
 
 # ms = markersize
 # mec = markeredgecolor
