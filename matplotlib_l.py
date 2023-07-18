@@ -52,8 +52,8 @@ vAxis = np.array([3,8,1,10])
 # mfc = markerfacecolor
 
 '''--------------------   Line   --------------------------'''
-#single line
 
+# single line
 ypoints = np.array([3,8,1,10])
 # plt.plot(ypoints, linestyle = 'dotted')
 # plt.plot(ypoints, ls = ':', color = 'r')
@@ -65,3 +65,5 @@ ypoints = np.array([3,8,1,10])
 
 plt.plot(ypoints, ls = ':', color = 'g', linewidth = '10')
 plt.show()
+
+# multiple lines
