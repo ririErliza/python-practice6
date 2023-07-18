@@ -56,9 +56,12 @@ vAxis = np.array([3,8,1,10])
 
 ypoints = np.array([3,8,1,10])
 # plt.plot(ypoints, linestyle = 'dotted')
-plt.plot(ypoints, ls = ':', color = 'r')
-plt.show()
+# plt.plot(ypoints, ls = ':', color = 'r')
+# plt.show()
 
 # linestyle can be written as ls.
 # dotted can be written as :.
 # dashed can be written as --.
+
+plt.plot(ypoints, ls = ':', color = 'g', linewidth = '10')
+plt.show()
